@@ -7,6 +7,5 @@ const collection = 'LIVRARIA'
 /* CRIAR OU ACESSA O BANCO DE DADOS: */
 use(database)
 
-/* SELECIONA TODOS OS REGISTROS DA COLEÇÃO */
-db[collection].find()
+db[collection].find({"categoria":"Ficção Científica"})
 
