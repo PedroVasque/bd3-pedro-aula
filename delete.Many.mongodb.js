@@ -7,10 +7,8 @@ const collection = "bd3-nosql-atv1"
 /* CRIAR OU ACESSAR O BANCO DE DADOS: */
 use(database);
 
-/* ALTERA OS DADOS DE UM ÚNICO DOCUMENTO DA COLLECTION */
-db[collection].updateOne(
-    {titulo: "As Cavernas de Aço"},
+db[collection].deleteMany(
 
-    {$set: {valor: "250"}}
+    {autor:"Isaac Asimov"}
 
-);
+)
