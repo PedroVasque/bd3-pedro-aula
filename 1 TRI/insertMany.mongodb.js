@@ -8,7 +8,7 @@ const collection = 'LIVRARIA'
 use(database)
 
 /*INSERE UM REGISTRO NA COLEÇÃO DE DADOS:*/
-db[collection].insertMany(
+db[collection].insertMany([
     {
         "codigo":"3",
         "titulo": "Os Robôs da Alvorada",
@@ -71,5 +71,5 @@ db[collection].insertMany(
         "imagem":"/livros/retorno_rei.jpg",
         "valor": 120,
         "categoria":"Fantasia Heroica"
-    }
+    }]
 )
